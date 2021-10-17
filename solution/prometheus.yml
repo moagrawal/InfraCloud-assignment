@@ -1,0 +1,12 @@
+global:
+  scrape_interval:     15s
+  scrape_timeout:     15s
+  external_labels:
+    monitor: 'csvserver_records'
+# Scrape configs only contain one scrape target
+scrape_configs:
+  - job_name: 'web'
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['web:9300']

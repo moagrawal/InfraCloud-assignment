@@ -7,10 +7,10 @@ fi
 if [ "$1" == "" ]; then
     x=9
 else
-    x=$1
+    x=`expr $1 -1`
 fi
 
-for i in `seq 1 $x`
+for (( i=0; i<=$x; i++ ))
 do
   echo "$i, $RANDOM" >> inputFile
 done
