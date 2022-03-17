@@ -1,3 +1,5 @@
+set -ex
+
 RANDOM=$$
 FILE=./inputFile
 if [ -f "$FILE" ]; then
