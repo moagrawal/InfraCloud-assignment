@@ -14,4 +14,4 @@ fi
 for (( i=0; i<=$x; i++ ))
 do
   echo "$i, $RANDOM" >> inputFile
-don
+d
