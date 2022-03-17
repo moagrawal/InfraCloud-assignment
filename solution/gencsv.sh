@@ -4,7 +4,7 @@ RANDOM=$$
 FILE=./inputFile
 if [ -f "$FILE" ]; then
     rm $FILE
-fi
+
 
 if [ "$1" == "" ]; then
     x=9
